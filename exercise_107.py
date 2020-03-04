@@ -23,7 +23,7 @@ menu = ['falafel', 'HuMMus', 'coUScous', 'Bacalhau a Bras']
 food_order = []
 
 #1
-print("Today's menu: " + menu[0].capitalize() + ', ' + menu[1].capitalize() + ', ' + menu[2].capitalize() + ', ' + menu[3].capitalize())
+print(f"Today's menu: {menu[0].capitalize()}, {menu[1].capitalize()}, {menu[2].capitalize()}, {menu[3].capitalize()}")
 
 #2
 order1 = input('What would you like to add to order?: ')
@@ -34,9 +34,18 @@ order3 = input('What would you like to add to order?: ')
 food_order.append(order3.capitalize())
 
 #3
-print("You have ordered: ".join(food_order))
+order = ", ".join(food_order)
+print(f"You have ordered: {order}")
 
 # I need to print each item from the list
+for item in menu:
+    print(item.capitalize())
 # print(menu[0])
+print(menu[0].capitalize())
 # before I print I need to make them all capitalized
+menu[0]="Falafel"
+menu[1]="Hummus"
+menu[2]="Couscous"
+menu[3]="Bacalhau a bras"
 #  print everything
+print(menu)
