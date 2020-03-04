@@ -33,7 +33,9 @@ food_order.append(order2.capitalize())
 order3 = input('What would you like to add to order?: ')
 food_order.append(order3.capitalize())
 
-    
+#3
+print("You have ordered: ".join(food_order))
+
 # I need to print each item from the list
 # print(menu[0])
 # before I print I need to make them all capitalized
