@@ -25,7 +25,15 @@ food_order = []
 #1
 print("Today's menu: " + menu[0].capitalize() + ', ' + menu[1].capitalize() + ', ' + menu[2].capitalize() + ', ' + menu[3].capitalize())
 
+#2
+order1 = input('What would you like to add to order?: ')
+food_order.append(order1.capitalize())
+order2 = input('What would you like to add to order?: ')
+food_order.append(order2.capitalize())
+order3 = input('What would you like to add to order?: ')
+food_order.append(order3.capitalize())
 
+    
 # I need to print each item from the list
 # print(menu[0])
 # before I print I need to make them all capitalized
